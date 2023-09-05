@@ -108,7 +108,19 @@
 							{
 								"$ref": "#/components/schemas/deleted_customer"
 							}
-						]
+						],
+            "description": "The ID of the customer who will be billed.",
+            "nullable": true,
+            "x-expansionResources": {
+              "oneOf": [
+                {
+                  "$ref": "#/components/schemas/customer"
+                },
+                {
+                  "$ref": "#/components/schemas/deleted_customer"
+                }
+              ]
+            }
 					},
 					"customer_address": {
 						"type": "object",
@@ -455,7 +467,7 @@
 						"description": "Specifies which fields in the response should be expanded.",
 						"explode": true,
 						"in": "query",
-						"name": "expand",
+						"name": "expand[]",
 						"required": false,
 						"schema": {
 							"items": {
@@ -774,7 +786,7 @@
 										"format": "unix-time",
 										"type": "integer"
 									},
-									"expand": {
+									"expand[]": {
 										"description": "Specifies which fields in the response should be expanded.",
 										"items": {
 											"maxLength": 5000,

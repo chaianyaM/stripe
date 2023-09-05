@@ -1363,6 +1363,6 @@
 		}
 	],
 	"servers": [{
-		"url": "https://api.stripe.com"
+		"url": "https://api.stripe.com/"
 	}]
 }

@@ -949,7 +949,7 @@
 																	"request_three_d_secure": {
 																		"enum": [
 																			"any",
-																			"automatic"
+																			"automatic"ex
 																		],
 																		"type": "string"
 																	}
@@ -1375,6 +1375,6 @@
 		}
 	],
 	"servers": [{
-		"url": "https://api.stripe.com/"
+		"url": "https://api.stripe.com"
 	}]
 }
